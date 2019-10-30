@@ -27,3 +27,9 @@ const generateComputerChoice = (objects) => {
     //sconsole.log(`${computer} : ${objects[computer]}`);
     return (objects[computer]);
 }
+
+const getWhoWins = (name, object) => {
+    if(object.){
+
+    }
+}

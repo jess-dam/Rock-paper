@@ -9,6 +9,7 @@ function App() {
   const[objects, setObjects] = React.useState(['Rock','Paper','Scissors']);
   return (
     <>
+      <h1>Make a choice</h1>
       <ObjectButton
         name={'Rock'}
         setName={setName}
