@@ -2,24 +2,32 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import ObjectButton from './components/ObjectButton';
+
 function App() {
+  const[name, setName] = React.useState();
+  const[objects, setObjects] = React.useState(['Rock','Paper','Scissors']);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ObjectButton
+        name={'Rock'}
+        setName={setName}
+        objects={objects}
+        setObjects={setObjects}
+      />
+      <ObjectButton
+        name={'Paper'}
+        setName={setName}
+        objects={objects}
+        setObjects={setObjects}
+      />
+      <ObjectButton
+        name={'Scissors'}
+        setName={setName}
+        objects={objects}
+        setObjects={setObjects}
+      />
+    </>
   );
 }
 
